@@ -1,0 +1,25 @@
+Passport
+----------------------------------------
+Release notes for passport:
+
+----------------------------------------
+Passport 0.3
+----------------------------------------
+- Extending classes to utilize Spring Security. Adding the PassportAuthenticationManager to use for validating users.
+- Refactoring to support these changes.
+
+----------------------------------------
+Passport 0.2.2
+----------------------------------------
+- Migrating encryption logic to a different version of the UserService. (Set the useEncryptionUserService to true on PassportConfig)
+- Adding roles to the Users.
+- Creating an interface model for contacting users.
+
+----------------------------------------
+Passport 0.2.1
+----------------------------------------
+- Adding transaction management to the UserDAO
+- Creating a password-protected sessionFactory so configuration won't contain a clear-text password
+- Creating a Java-based configuration for deployment.
+- Adding an email service for user notification.
+- Modifying the CipherService so clients can create the encrypted password for database connections.
